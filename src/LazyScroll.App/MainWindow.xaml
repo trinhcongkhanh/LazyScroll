@@ -1,0 +1,64 @@
+﻿
+<Window
+    x:Class="LazyScroll.App.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LazyScroll"
+    Width="420"
+    Height="350"
+    WindowStartupLocation="CenterScreen">
+
+    <StackPanel Margin="24">
+
+        <TextBlock
+            Text="LazyScroll"
+            FontSize="26"
+            FontWeight="Bold"/>
+
+        <TextBlock
+            Text="Windows Scroll Controller"
+            Margin="0,4,0,20"/>
+
+        <TextBlock Text="Interval (seconds)"/>
+
+        <TextBox
+            Text="{Binding IntervalSeconds,
+                   UpdateSourceTrigger=PropertyChanged}"
+            Margin="0,5,0,12"/>
+
+        <TextBlock Text="Scroll notches"/>
+
+        <TextBox
+            Text="{Binding Notches,
+                   UpdateSourceTrigger=PropertyChanged}"
+            Margin="0,5,0,12"/>
+
+        <CheckBox
+            Content="Scroll Up (uncheck for Down)"
+            IsChecked="{Binding ScrollUp}"
+            Margin="0,0,0,16"/>
+
+        <StackPanel Orientation="Horizontal">
+
+            <Button
+                Content="START"
+                Command="{Binding StartCommand}"
+                Width="120"
+                Height="36"
+                Margin="0,0,12,0"/>
+
+            <Button
+                Content="STOP"
+                Command="{Binding StopCommand}"
+                Width="120"
+                Height="36"/>
+
+        </StackPanel>
+
+        <TextBlock
+            Text="{Binding Status}"
+            FontWeight="SemiBold"
+            Margin="0,20,0,0"/>
+
+    </StackPanel>
+</Window>

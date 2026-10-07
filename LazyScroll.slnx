@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LazyScroll.App/LazyScroll.App.csproj" />
+    <Project Path="src/LazyScroll.Application/LazyScroll.Application.csproj" />
+    <Project Path="src/LazyScroll.Core/LazyScroll.Core.csproj" />
+    <Project Path="src/LazyScroll.Infrastructure/LazyScroll.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LazyScroll.UnitTests/LazyScroll.UnitTests.csproj" />
+  </Folder>
+</Solution>
